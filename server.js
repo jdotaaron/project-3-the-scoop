@@ -418,7 +418,11 @@ function downvoteComment(url, request) {
 
   return response;
 }
-
+/*
+Reviewer: I'm not sure if this works?
+Is there a way I can test this? When I open index.html there are
+no articles.  Please advise.
+*/
 function loadDatabase() {
   let config = {};
 
