@@ -350,9 +350,8 @@ function removeComment(url) {
     const commentArticleIds = database.articles[articleId].commentIds;
 
     database.comments[id] = null;
-    database.users[username].commentIds.splice(userCommentIds.indexOf(id), 1);
-    database.articles[articleId].commentIds.splice(commentArticleIds.indexOf(id), 1);
-
+    userCommentIds.splice(userCommentIds.indexOf(id), 1);
+    commentArticleIds.splice(commentArticleIds.indexOf(id), 1);
 
     response.status = 204;
   }
